@@ -181,7 +181,7 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#home" aria-label="Thynk Unlimited"><b>Thynk</b><span>Unlimited.</span></a>
+    <a class="brand" href="#home" aria-label="Thynk Unlimited"><b>Trader</b><span>Profesional.</span></a>
     <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -263,13 +263,23 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 <section id="galeri">
   <div class="wrap">
     <h2>Galeri</h2>
-    <div class="slider" role="region" aria-roledescription="carousel" aria-label="Galeri video">
-      <button class="arrow prev" id="prev" aria-label="Video sebelumnya"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div class="track" id="track" tabindex="0">
-        <figure class="slide"><video src="vidio/video-1.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 1"></video></figure>
-        <figure class="slide"><video src="vidio/video-2.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 2"></video></figure>
-        <figure class="slide"><video src="vidio/video-3.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 3"></video></figure>
-        <figure class="slide"><video src="vidio/video-5.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 5"></video></figure>
+   <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <video autoplay loop muted playsinline><source src="video1.mp4" type="video/mp4"></video>
+    </div>
+    <div class="swiper-slide">
+      <video autoplay loop muted playsinline><source src="video2.mp4" type="video/mp4"></video>
+    </div>
+    <div class="swiper-slide">
+      <video autoplay loop muted playsinline><source src="video3.mp4" type="video/mp4"></video>
+    </div>
+  </div>
+  <!-- Navigation buttons & dots -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
       </div>
       <button class="arrow next" id="next" aria-label="Video berikutnya"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
