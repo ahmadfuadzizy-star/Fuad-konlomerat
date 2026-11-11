@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ahmad Fuad Fauzi | Trader Profesional</title>
+<title>Ahmad Fuad Fauzi | Thynk Unlimited</title>
 <meta name="description" content="Portofolio praktisi pasar keuangan independen: Major Currency Pairs dan emas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,27 +136,6 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 @media(max-width:900px){.slide{flex-basis:calc((100% - 22px) / 2)}}
 @media(max-width:560px){.slide{flex-basis:100%}.arrow.prev{left:8px}.arrow.next{right:8px}}
 
-
-/* ===== Variasi tampilan slider =====
-   Tambahkan SATU class ini di <div class="slider ..."> :  v-fokus | v-neon | v-lebar  */
-/* v-fokus: video tengah besar, kiri-kanan mengecil */
-.v-fokus{--w:300px}
-.v-fokus .track{padding:30px calc(50% - var(--w) / 2);gap:18px}
-.v-fokus .slide{flex:0 0 var(--w);scroll-snap-align:center;transform:scale(.86);opacity:.45;filter:saturate(.7);transition:transform .4s,opacity .4s,filter .4s}
-.v-fokus .slide.active{transform:scale(1);opacity:1;filter:none;border-color:rgba(240,166,255,.5);box-shadow:0 20px 60px rgba(124,92,255,.35)}
-@media(max-width:560px){.v-fokus{--w:72vw}}
-/* v-neon: bingkai gradasi menyala */
-.v-neon .track{padding:20px 6px}
-.v-neon .slide{border:0;border-radius:28px;padding:3px;background:linear-gradient(135deg,#7c5cff,#f0a6ff,#4f6df5);box-shadow:0 0 28px rgba(124,92,255,.45)}
-.v-neon .slide video{border-radius:25px}
-.v-neon .arrow{background:var(--grad);color:#1a1033;border:0}
-.v-neon .dots button.on{box-shadow:0 0 12px var(--pink)}
-/* v-lebar: satu video per layar ala bioskop */
-.v-lebar{max-width:880px;margin-inline:auto}
-.v-lebar .slide{flex:0 0 100%;aspect-ratio:16/9;border-radius:28px}
-.v-lebar .slide video{object-fit:contain}
-@media(max-width:560px){.v-lebar .slide{aspect-ratio:4/5}}
-
 /* Responsive */
 @media(max-width:900px){
   .hero,.edu{grid-template-columns:1fr}
@@ -181,7 +160,7 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#home" aria-label="Trader Profesional"><b>Trader</b><span>Profesional.</span></a>
+    <a class="brand" href="#home" aria-label="Thynk Unlimited"><b>Thynk</b><span>Unlimited.</span></a>
     <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -263,24 +242,14 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 <section id="galeri">
   <div class="wrap">
     <h2>Galeri</h2>
- <div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <video autoplay loop muted playsinline><source src="video1.mp4" type="video/mp4"></video>
-    </div>
-    <div class="swiper-slide">
-      <video autoplay loop muted playsinline><source src="video2.mp4" type="video/mp4"></video>
-    </div>
-    <div class="swiper-slide">
-      <video autoplay loop muted playsinline><source src="video3.mp4" type="video/mp4"></video>
-    </div>
-  </div>
-  </div>
-  <!-- Navigation buttons & dots -->
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
+    <div class="slider" role="region" aria-roledescription="carousel" aria-label="Galeri video">
+      <button class="arrow prev" id="prev" aria-label="Video sebelumnya"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div class="track" id="track" tabindex="0">
+        <figure class="slide"><video src="vidio/video-1.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 1"></video></figure>
+        <figure class="slide"><video src="vidio/video-2.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 2"></video></figure>
+        <figure class="slide"><video src="vidio/video-3.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 3"></video></figure>
+        <figure class="slide"><video src="vidio/video-4.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 4"></video></figure>
+        <figure class="slide"><video src="vidio/video-5.mp4#t=0.1" controls playsinline preload="metadata" aria-label="Video galeri 5"></video></figure>
       </div>
       <button class="arrow next" id="next" aria-label="Video berikutnya"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
@@ -299,13 +268,13 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
           <span class="ico wa"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3 3 6 6 6l1-2-2-1-1 .8c-.8-.4-1.6-1.2-2-2l.8-1-1-2z"/></svg></span>
           <span><small>WhatsApp</small><b>+62 83114766884</b></span>
         </a>
-        <a class="item" href="https://www.instagram.com/aaazzzyyy_aja/" target="_blank" rel="noopener">
+        <a class="item" href="https://instagram.com/ahmaddrisal" target="_blank" rel="noopener">
           <span class="ico ig"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
-          <span><small>Instagram</small><b>@aaazzzyyy_aja</b></span>
+          <span><small>Instagram</small><b>@ahmaddrisal</b></span>
         </a>
-       <a class="item" href="https://www.google.com/maps/@-8.2798792,113.5358262,27a,75y,27.71h,77.94t/data=!3m7!1e1!3m5!1sBuj3ieJLQ6bfoEq37r_zEQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D12.057649868316972%26panoid%3DBuj3ieJLQ6bfoEq37r_zEQ%26yaw%3D27.70706816945462!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-  <span class="ico mp"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
-  <span><small>Lokasi</small><b>Balung Jember</b></span>
+        <div class="item">
+          <span class="ico mp"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+          <span><small>Lokasi</small><b>Alamat segera ditambahkan</b></span>
         </div>
       </div>
     </div>
@@ -313,7 +282,7 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 </section>
 </main>
 
-<footer><div class="wrap">&copy; <span id="yr">2026</span> Trader profesional. Ahmad Fuad Fauzi.</div></footer>
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Thynk Unlimited. Ahmad Fuad Fauzi.</div></footer>
 
 <script>
   // Menu mobile
@@ -357,15 +326,7 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
       }
       mark();
     }
-    function mark() {
-      const c = cur();
-      [...dotsEl.children].forEach((d, i) => d.classList.toggle('on', i === c));
-      slides.forEach((sl, i) => sl.classList.toggle('active', i === c));
-    }
-    // Mode v-fokus: klik video samping untuk memindahkannya ke tengah
-    slides.forEach((sl, i) => sl.addEventListener('click', e => {
-      if (track.parentElement.classList.contains('v-fokus') && i !== cur()) { e.preventDefault(); e.stopPropagation(); go(i); }
-    }, true));
+    function mark() { [...dotsEl.children].forEach((d, i) => d.classList.toggle('on', i === cur())); }
 
     document.getElementById('prev').onclick = () => go(cur() === 0 ? maxIdx() : cur() - 1);
     document.getElementById('next').onclick = () => go(cur() >= maxIdx() ? 0 : cur() + 1);
@@ -384,6 +345,28 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
       if (!e.isIntersecting) e.target.querySelector('video').pause();
     }), { root: track, threshold: 0.4 });
     slides.forEach(sl => io.observe(sl));
+
+    // ===== Geser otomatis =====
+    const AUTO_MS = 3500;            // jeda antar geser (milidetik). Isi 0 untuk mematikan
+    const slider = track.parentElement;
+    let timer = null, hold = false, inView = true;
+    const playing = () => slides.some(sl => !sl.querySelector('video').paused);
+    const tick = () => {
+      if (hold || !inView || document.hidden || playing()) return;   // jeda saat disentuh, tak terlihat, atau ada video diputar
+      go(cur() >= maxIdx() ? 0 : cur() + 1);                          // sampai ujung -> kembali ke video pertama
+    };
+    const stop = () => clearInterval(timer);
+    const start = () => { stop(); if (AUTO_MS > 0 && !reduce) timer = setInterval(tick, AUTO_MS); };
+
+    slider.addEventListener('mouseenter', () => hold = true);
+    slider.addEventListener('mouseleave', () => { hold = false; start(); });
+    slider.addEventListener('focusin',    () => hold = true);
+    slider.addEventListener('focusout',   () => { hold = false; start(); });
+    slider.addEventListener('touchstart', () => hold = true, { passive: true });
+    slider.addEventListener('touchend',   () => { hold = false; start(); }, { passive: true });
+    slider.addEventListener('click', start);                           // klik panah/titik -> hitung ulang jeda
+    new IntersectionObserver(es => { inView = es[0].isIntersecting; }, { threshold: 0.3 }).observe(slider);
+    start();
   })();
 
   document.getElementById('yr').textContent = new Date().getFullYear();
