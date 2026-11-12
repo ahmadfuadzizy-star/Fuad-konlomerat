@@ -135,25 +135,8 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 .dots button.on{width:30px;background:var(--grad)}
 @media(max-width:900px){.slide{flex-basis:calc((100% - 22px) / 2)}}
 @media(max-width:560px){.slide{flex-basis:100%}.arrow.prev{left:8px}.arrow.next{right:8px}}
-   a.badge{text-decoration:none;cursor:pointer;transition:background .2s,transform .2s,border-color .2s}
-   a.badge:hover{background:rgba(47,212,160,.25);border-color:rgba(47,212,160,.7);transform:translateY(-2px)}
-   a.badge svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-     a.badge{text-decoration:none;cursor:pointer;transition:background .2s,transform .2s,border-color .2s}
-   a.badge:hover{background:rgba(47,212,160,.25);border-color:rgba(47,212,160,.7);transform:translateY(-2px)}
-   a.badge svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
 /* Responsive */
-  /* Samakan jarak kiri Keahlian dengan Riwayat Pendidikan */
-#keahlian{padding-left:max(4%,calc((100% - 1120px) / 2));padding-right:max(4%,calc((100% - 1120px) / 2))}
- /* Keahlian: kartu ringkas + jarak kiri-kanan seperti Riwayat Pendidikan */
-.skills{gap:22px}
-.skill{padding:28px}
-.skill .vis{aspect-ratio:auto;height:150px;flex:none;overflow:hidden;border:1px solid var(--line);border-radius:16px}
-.skill .vis .shot{height:150px;object-fit:cover;object-position:top}
-.skill div.t{padding:20px 0 0}
-.skill h3{font-size:1.1rem;margin-bottom:6px}
-.skill p{font-size:.92rem;line-height:1.55}
-.macro{gap:22px;margin-top:22px}
-.macro div{padding:18px 10px}
 @media(max-width:900px){
   .hero,.edu{grid-template-columns:1fr}
   .skills{grid-template-columns:1fr}
@@ -177,7 +160,7 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#home" aria-label="Trader Profesional"><b>Thynk</b><span>Unlimited.</span></a>
+    <a class="brand" href="#home" aria-label="Thynk Unlimited"><b>Thynk</b><span>Unlimited.</span></a>
     <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -210,16 +193,21 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 </section>
 
 <!-- PENDIDIKAN -->
-   <section id="keahlian">
-     <div class="wrap">
-       <h2>Riwayat &amp; pendidikan</h2>
+<section id="pendidikan">
+  <div class="wrap">
+    <h2>Riwayat Pendidikan</h2>
+    <p class="lead">Perjalanan belajar dari tingkat dasar hingga sekarang.</p>
     <div class="school">
       <article class="card"><span class="no">01</span><h3>MiMA Zainul Hasan<br>Balung Jember</h3></article>
       <article class="card"><span class="no">02</span><h3>MTS Zainul Hasan<br>Balung Jember</h3></article>
-      <article class="card"><span class="no">03</span><div><h3>MAN 1 Jember</h3><a class="badge" href="https://man1jember.sch.id/" target="_blank" rel="noopener" aria-label="Masih Study, buka website MAN 1 Jember"><i></i>Masih Study<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div></article>
+      <article class="card"><span class="no">03</span><div><h3>MAN 1 Jember</h3><span class="badge"><i></i>Masih Study</span></div></article>
     </div>
   </div>
 </section>
+
+<!-- KEAHLIAN -->
+<section id="keahlian">
+  <div class="wrap">
     <h2>Keahlian Analisis &amp; Manajemen</h2>
     <p class="lead">Tiga kompetensi utama yang saya gunakan setiap hari di pasar.</p>
     <div class="skills">
@@ -280,13 +268,13 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
           <span class="ico wa"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 8.5c0 3 3 6 6 6l1-2-2-1-1 .8c-.8-.4-1.6-1.2-2-2l.8-1-1-2z"/></svg></span>
           <span><small>WhatsApp</small><b>+62 83114766884</b></span>
         </a>
-        <a class="item" href="https://www.instagram.com/aaazzzyyy_aja/" target="_blank" rel="noopener">
+        <a class="item" href="https://instagram.com/ahmaddrisal" target="_blank" rel="noopener">
           <span class="ico ig"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
-          <span><small>Instagram</small><b>@aaazzzyyy_aja</b></span>
+          <span><small>Instagram</small><b>@ahmaddrisal</b></span>
         </a>
-       <a class="item" href="https://www.google.com/maps/place/PT.+AN+NAMIROH+BALUNG/@-8.2798651,113.5354364,204m/data=!3m1!1e3!4m15!1m8!3m7!1s0x2dd685636a4d0977:0xfab1a1af06f718dc!2sBalung,+Wetan+Kali,+Balung+Lor,+Kec.+Balung,+Kabupaten+Jember,+Jawa+Timur!3b1!8m2!3d-8.282119!4d113.546097!16s%2Fg%2F1vzn2zy2!3m5!1s0x2dd6857b43afbd5f:0xf985c6d38da33b09!8m2!3d-8.2798652!4d113.5358753!16s%2Fg%2F11kk6yvssp?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-  <span class="ico mp"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
-  <span><small>Lokasi</small><b>Balung-Jember</b></span>
+        <div class="item">
+          <span class="ico mp"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+          <span><small>Lokasi</small><b>Alamat segera ditambahkan</b></span>
         </div>
       </div>
     </div>
@@ -294,7 +282,7 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
 </section>
 </main>
 
-<footer><div class="wrap">&copy; <span id="yr">2026</span> . Ahmad Fuad Fauzi.</div></footer>
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Thynk Unlimited. Ahmad Fuad Fauzi.</div></footer>
 
 <script>
   // Menu mobile
