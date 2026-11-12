@@ -396,22 +396,5 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
        })();
      })();
 </script>
-  (() => {
-    const el = document.getElementById('typed');
-    if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const words = ['Haiii...'];
-    const TYPE = 110, ERASE = 60, HOLD = 1600, GAP = 500;
-    let w = 0, i = 0, del = false;
-    el.textContent = '';
-    (function loop() {
-      const word = words[w];
-      el.textContent = word.slice(0, i);
-      let d = del ? ERASE : TYPE;
-      if (!del && i === word.length) { del = true; d = HOLD; }
-      else if (del && i === 0) { del = false; w = (w + 1) % words.length; d = GAP; }
-      else i += del ? -1 : 1;
-      setTimeout(loop, d);
-    })();
-  })();
 </body>
 </html>
