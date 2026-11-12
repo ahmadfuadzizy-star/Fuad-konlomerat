@@ -142,11 +142,12 @@ a.item:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}
    a.badge:hover{background:rgba(47,212,160,.25);border-color:rgba(47,212,160,.7);transform:translateY(-2px)}
    a.badge svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 /* Responsive */
-  /* Keahlian: kartu ringkas, serasi dengan Riwayat Pendidikan */
+ /* Keahlian: kartu ringkas + jarak kiri-kanan seperti Riwayat Pendidikan */
 .skills{gap:22px}
-.skill .vis{aspect-ratio:auto;height:150px;flex:none;overflow:hidden}
+.skill{padding:28px}
+.skill .vis{aspect-ratio:auto;height:150px;flex:none;overflow:hidden;border:1px solid var(--line);border-radius:16px}
 .skill .vis .shot{height:150px;object-fit:cover;object-position:top}
-.skill div.t{padding:20px 24px 24px}
+.skill div.t{padding:20px 0 0}
 .skill h3{font-size:1.1rem;margin-bottom:6px}
 .skill p{font-size:.92rem;line-height:1.55}
 .macro{gap:22px;margin-top:22px}
